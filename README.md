@@ -1,5 +1,5 @@
 ## A Project on APIs and Microservices
-### An ExpressJS Web Application which has 5 functionalities which are listed below:
+### An ExpressJS Web Application which has 5 different functionalities which are listed below:
 * TimeStamp Microservice
 * Header Parser Microservice
 * URL Shortner Microservice
