@@ -1,0 +1,154 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.middle{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu{
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.item{
+  border-top: 1px solid #2980b9;
+  overflow: hidden;
+}
+.btn{
+  display: block;
+  padding: 16px 20px;
+  background: #3498db;
+  color: white;
+  position: relative;
+}
+.btn:before{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background:#3498db;
+  left: 20px;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+.btn i{
+  margin-right: 10px;
+}
+.smenu{
+  background: #333;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+.smenu a{
+  display: block;
+  padding: 16px 26px;
+  color: white;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+}
+.smenu a:before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #3498db;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.smenu a:hover:before{
+  opacity: 1;
+}
+.item:target .smenu{
+  max-height: 40em;
+}
+
+
+
+ .subscribe-box .subscribe {
+	 width: 100%;
+   max-width: 200px;
+	 margin: auto;
+}
+ .subscribe-box .subscribe input {
+	 width: 100%;
+	 background: transparent;
+	 border: 0;
+	 border-bottom: 1px solid;
+	 padding: 1em 0 0.8em;
+	 text-align: center;
+	 font-size: 14px;
+	 font-family: inherit;
+	 font-weight: 300;
+	 line-height: 1.5;
+	 color: inherit;
+	 outline: none;
+}
+ .subscribe-box .subscribe input::placeholder {
+	 color: rgba(255, 255, 255, 0.5);
+}
+ .subscribe-box .subscribe button {
+	 all: unset;
+   margin-top: 1em;
+   height: 10px;
+	 background: transparent;
+	 border: 2px solid white;
+	 padding: 1em 5em;
+	 border-radius: 50px;
+	 cursor: pointer;
+	 display: inline-block;
+	 font-weight: 700;
+	 position: relative;
+	 transition: all 300ms ease;
+}
+ .subscribe-box .subscribe button span {
+	 display: inline-block;
+	 transition: all 300ms ease;
+}
+ .subscribe-box .subscribe button:before, .subscribe-box .subscribe button:after {
+	 content: "";
+	 display: block;
+	 position: absolute;
+	 transition: all 300ms ease;
+	 opacity: 0;
+}
+ .subscribe-box .subscribe button:before {
+	 height: 5px;
+	 width: 5px;
+	 background: transparent;
+	 border-right: 2px solid;
+	 border-top: 2px solid;
+	 right: 30px;
+	 top: 21px;
+	 transform: rotate(45deg);
+}
+ .subscribe-box .subscribe button:after {
+	 background: white;
+	 height: 2px;
+   width: 50px;
+   left: -1.25em;
+   top: 1.69em;
+}
+ .subscribe-box .subscribe button:hover span {
+	 transform: translateX(-10px);
+}
+ .subscribe-box .subscribe button:hover:before {
+	 opacity: 1;
+}
+ .subscribe-box .subscribe button:hover:after {
+	 width: 14px;
+	 opacity: 1;
+	 transform: translateX(160px);
+}
+

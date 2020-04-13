@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+  </head>
+  <body>
+
+    
+    <header class="header-fixed">
+
+      <div class="header-limiter">
+        <h1><a>APIs and Microservices</a></h1>
+        <nav>
+          <a><i class="far fa-clock"></i></a>
+          <a><i class="far fa-address-card"></i></a>
+          <a><i class="fas fa-compress-arrows-alt"></i></a>
+          <a><i class="fas fa-running"></i></a>
+          <a><i class="far fa-file"></i></a>
+        </nav>
+      </div>
+
+    </header>
+
+    <div class="middle">
+      <div class="menu">
+        <li class="item" id='timestamp'>
+          <a href="#timestamp" class="btn"><i class="far fa-clock"></i>Timestamp</a>
+          <div class="smenu">
+            <a href="#">APIs and Microservices Project: Timestamp Microservice</a>
+          </div>
+        </li>
+
+        <li class="item" id="reqHeadParser">
+          <a href="#reqHeadParser" class="btn"><i class="far fa-address-card"></i>Request Header Parser</a>
+          <div class="smenu">
+            <a href="#">APIs and Microservices Project: Request Header Parser Microservice</a>
+          </div>
+        </li>
+
+        <li class="item" id="urlShortner">
+          <a href="#urlShortner" class="btn"><i class="fas fa-compress-arrows-alt"></i>URL Shortner</a>
+          <div class="smenu">
+            <a>
+              <div class="subscribe-box">
+                <form class="subscribe" action="api/shorturl/new" method="POST">
+                  <label for="url_input">URL to be shortened</label>
+                  <input id="url_input" type="text" name="url" value="https://www.freecodecamp.com">
+                  <button type="submit" value="Submit"> 
+                    <span>Submit</span>
+                  </button>
+                </form>
+              </div>
+              </a>
+          </div>
+        </li>
+
+        <li class="item" id="exerciseTrackerA">
+          <a href="#exerciseTrackerA" class="btn"><i class="fas fa-running"></i>Exercise Tracker: Register User</a>
+          <div class="smenu">
+            <a>
+              <div class="subscribe-box">
+                <form class="subscribe" action="/api/exercise/new-user" method="post">
+                  <input id="uname" type="text" name="username" placeholder="UserName">
+                  <button type="submit" value="Submit"> 
+                    <span>Submit</span>
+                  </button>
+                </form>
+              </div>
+            </a>
+          </div>
+        </li>
+
+        <li class="item" id="exerciseTrackerB">
+          <a href="#exerciseTrackerB" class="btn"><i class="fas fa-running"></i>Exercise Tracker: Enter Records</a>
+          <div class="smenu">
+            <a>
+              <div class="subscribe-box">
+                <form class="subscribe" action="/api/exercise/add" method="post">
+                  <input id="uid" type="text" name="userId" placeholder="User ID*">
+                  <input id="desc" type="text" name="description" placeholder="Description*">
+                  <input id="dur" type="text" name="duration" placeholder="Duration* (in mins.)">
+                  <input id="dat" type="text" name="date" placeholder="Date (YYYY-MM-DD)">
+                  <button type="submit" value="Submit"> 
+                    <span>Submit</span>
+                  </button>
+                </form>
+              </div>
+            </a>
+          </div>
+        </li>
+
+        <li class="item" id="fileMetadata">
+          <a href="#fileMetadata" class="btn"><i class="far fa-file"></i>File Metadata</a>
+          <div class="smenu">
+            <a>
+              <div class="subscribe-box">
+                <form class="subscribe" enctype="multipart/form-data" method="POST" action="/api/filedetails">
+                  <input type="file" name="uploadFile"/>
+                  <button type="submit" value="Upload"> 
+                    <span>Submit</span>
+                  </button>
+                </form>
+              </div>
+            </a>
+          </div>
+        </li>
+
+        <li class="item">
+          <a class="btn" href="#"><i class="fas fa-chevron-circle-up"></i>Collapse</a>
+        </li>
+      </div>
+    </div>
+  <script src="./header/header.js"></script>
+  </body>
+</html>
